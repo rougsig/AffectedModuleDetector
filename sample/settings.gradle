@@ -1,3 +1,5 @@
 include ':sample-app'
 include ':sample-core'
 include ':sample-util'
+
+includeBuild 'include-util'

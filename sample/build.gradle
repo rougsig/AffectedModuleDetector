@@ -28,7 +28,9 @@ affectedModuleDetector {
     specifiedBranch = "main"
     compareFrom = "SpecifiedBranchCommit"
 
-    logFolder = "${project.rootDir}"
+    logFilename = "output.log"
+    logFolder = "${project.rootDir}/output"
+
     excludedModules = [
             "sample-util"
     ]

@@ -1,0 +1,33 @@
+[INFO] [amd] Modules provided: null
+[INFO] [amd] Using real detector with ALL_AFFECTED_PROJECTS
+[INFO] [amd] running command git --no-pager rev-parse HEAD~1 in /Users/a19592123/projects/AffectedModuleDetector/sample
+[INFO] [amd] Response: a44093cd69f250980d98bc1c865f212882167065
+
+[INFO] [amd] running command git --no-pager diff --name-only a44093cd69f250980d98bc1c865f212882167065 in /Users/a19592123/projects/AffectedModuleDetector/sample
+[INFO] [amd] Response: sample/build.gradle
+sample/include-util/common/src/test/java/com/dropbox/detector/sample_util/ExampleUnitTest.kt
+
+[INFO] [amd] initializing ProjectGraph
+[INFO] [amd] creating node for :sample-app
+[INFO] [amd] relative path: sample-app , sections: [sample-app]
+[INFO] [amd] creating node for :sample-core
+[INFO] [amd] relative path: sample-core , sections: [sample-core]
+[INFO] [amd] creating node for :sample-util
+[INFO] [amd] relative path: sample-util , sections: [sample-util]
+[INFO] [amd] finished creating ProjectGraph com.dropbox.affectedmoduledetector.ProjectGraph$Node@234f1df6
+[INFO] [amd] finding containing project for sample/build.gradle , sections: [build.gradle]
+[INFO] [amd] finding [build.gradle] with index 0 in root
+[INFO] [amd] no child found, returning root
+[INFO] [amd] search result for sample/build.gradle resulted in null
+[INFO] [amd] Couldn't find containing project for filesample/build.gradle. Adding to unknownFiles.
+[INFO] [amd] finding containing project for sample/include-util/common/src/test/java/com/dropbox/detector/sample_util/ExampleUnitTest.kt , sections: [include-util, common, src, test, java, com, dropbox, detector, sample_util, ExampleUnitTest.kt]
+[INFO] [amd] finding [include-util, common, src, test, java, com, dropbox, detector, sample_util, ExampleUnitTest.kt] with index 0 in root
+[INFO] [amd] no child found, returning root
+[INFO] [amd] search result for sample/include-util/common/src/test/java/com/dropbox/detector/sample_util/ExampleUnitTest.kt resulted in null
+[INFO] [amd] Couldn't find containing project for filesample/include-util/common/src/test/java/com/dropbox/detector/sample_util/ExampleUnitTest.kt. Adding to unknownFiles.
+[INFO] [amd] Paths affecting all modules: [buildSrc/]
+[INFO] [amd] Paths affecting all modules: [buildSrc/]
+[INFO] [amd] unknownFiles: [sample/build.gradle, sample/include-util/common/src/test/java/com/dropbox/detector/sample_util/ExampleUnitTest.kt], changedProjects: [], buildAll: false
+[INFO] [amd] checking whether I should include :sample-core and my answer is false
+[INFO] [amd] checking whether I should include :sample-util and my answer is false
+[INFO] [amd] checking whether I should include :sample-app and my answer is false
